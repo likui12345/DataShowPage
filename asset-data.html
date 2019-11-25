@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>信通院</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="./static/css/style.min.css" />
+</head>
+
+<body>
+    <div class="asset-data-page page-style re flex-box">
+        <!-- 公用三级导航 -->
+        <div class="sub-nav">
+            <div class="input-search flex-box">
+                <input type="text" class="form-control" placeholder="请输入..." aria-describedby="basic-addon2" />
+                <button class="btn btn-primary" onclick="submit()">搜索</button>
+            </div>
+            <ul>
+                <li>
+                    <a href="" title="网络数据安全系统1"><b></b>网络数据安全系统1</a>
+                </li>
+                <li>
+                    <a href="" title="网络数据安全系统2"><b></b>网络数据安全系统2</a>
+                </li>
+                <li class="active">
+                    <a href="" title="网络数据安全系统3"><b></b>网络数据安全系统3</a>
+                </li>
+                <li>
+                    <a href="" title="网络数据安全系统4网络数据安全系统4网络数据安全系统4"><b></b>网络数据安全系统4网络数据安全系统4网络数据安全系统4</a>
+                </li>
+                <li>
+                    <a href="" title="网络数据安全系统5"><b></b>网络数据安全系统5</a>
+                </li>
+                <li>
+                    <a href="" title="网络数据安全系统6"><b></b>网络数据安全系统6</a>
+                </li>
+            </ul>
+        </div>
+        <div class="asset-data-content page-style-content">
+            <div class="div-section">
+                <div id="carrierType" class="carrier-type"></div>
+            </div>
+            <div class="div-section">
+                <div id="senDataType" class="sen-data-type"></div>
+                <div id="dataValue"></div>
+            </div>
+            <div class="div-section">
+                <div class="fingerprint-list">
+                    <div class="div-title">
+                        <h5>敏感指纹清单</h5>
+                    </div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>发现时间</th>
+                                    <th>指纹标签</th>
+                                    <th>指纹URL</th>
+                                    <th>参数</th>
+                                    <th>分类</th>
+                                    <th>今日请求量</th>
+                                    <th>是否活跃</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                </tr>
+                                <tr>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                </tr>
+                                <tr>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                </tr>
+                                <tr>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                </tr>
+                                <tr>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                    <td>sdfasfd</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/jquery/jquery-1.11.0.min.js"></script>
+    <script src="./libs/echarts/echarts.min.js"></script>
+    <script src="./libs/lodash/lodash.js"></script>
+
+    <!-- XXX 这里每个页面的js可直接写在对应的html中 -->
+    <script src="./static/js/asset-data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>信通院</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="./static/css/style.min.css" />
+</head>
+
+<body>
+    <div class="odd-alarm-page page-style re flex-box">
+        <!-- 公用三级导航 -->
+        <div class="sub-nav">
+            <div class="input-search flex-box">
+                <input type="text" class="form-control" placeholder="请输入..." aria-describedby="basic-addon2">
+                <button class="btn btn-primary" onclick="submitFun()">搜索</button>
+            </div>
+            <ul>
+                <li><a href="" title="网络数据安全系统1"><b></b>网络数据安全系统1</a></li>
+                <li><a href="" title="网络数据安全系统2"><b></b>网络数据安全系统2</a></li>
+                <li class="active"><a href="" title="网络数据安全系统3"><b></b>网络数据安全系统3</a></li>
+                <li><a href="" title="网络数据安全系统4网络数据安全系统4网络数据安全系统4"><b></b>网络数据安全系统4网络数据安全系统4网络数据安全系统4</a></li>
+                <li><a href="" title="网络数据安全系统5"><b></b>网络数据安全系统5</a></li>
+                <li><a href="" title="网络数据安全系统6"><b></b>网络数据安全系统6</a></li>
+            </ul>
+        </div>
+        <div class="odd-alarm-content page-style-content">
+            <div class="div-section">
+                <div id="dataRiskType" class="data-risk-type"></div>
+                <div id="areaAnaly"></div>
+            </div>
+            <div class="div-section">
+                <div id="riskRanking" class="risk-ranking"></div>
+            </div>
+            <div class="div-section">
+                <div id="alarmWow" class="alarm-wow"></div>
+                <div id="alarmMom"></div>
+            </div>
+            <div class="div-section">
+                <div id="alarmTrend" class="alarm-trend"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/jquery/jquery-1.11.0.min.js"></script>
+    <script src="./libs/echarts/echarts.min.js"></script>
+    <script src="./libs/lodash/lodash.js"></script>
+
+
+    <!-- XXX 这里每个页面的js可直接写在对应的html中 -->
+    <script src="./static/js/odd-alarm.js"></script>
+</body>
+
+</html>

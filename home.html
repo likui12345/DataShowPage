@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>信通院</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="./static/css/style.min.css" />
+</head>
+
+<body>
+    <div class="main home re">
+        <div class="header re tac">
+            <h3>数据安全监测巡查平台</h3>
+            <div class="exit-screen">退出全屏</div>
+        </div>
+        <div class="content flex-box">
+            <div class="left flex-box flex-column space-between">
+                <div class="statistical flex-box flex-wrap space-between">
+                    <div class="item flex-box flex-column">
+                        <span class="count tac">56465</span>
+                        <span class="text tac">敏感资产</span>
+                    </div>
+                    <div class="item flex-box flex-column">
+                        <span class="count tac">56465</span>
+                        <span class="text tac">敏感资产</span>
+                    </div>
+                    <div class="item flex-box flex-column">
+                        <span class="count tac">56465</span>
+                        <span class="text tac">敏感资产</span>
+                    </div>
+                    <div class="item flex-box flex-column">
+                        <span class="count tac">56465</span>
+                        <span class="text tac">敏感资产</span>
+                    </div>
+                </div>
+                <div class="sen-data-trend flex-box flex-column">
+                    <div class="title tac">
+                        <i></i> 敏感数据数量平滑趋势
+                        <i></i>
+                    </div>
+                    <div class="sen-data-chart" id="senDataTrendChart"></div>
+                </div>
+                <div class="company-sen-data flex-box flex-column">
+                    <div class="title tac">
+                        <i></i> 企业敏感数据TOP5
+                        <i></i>
+                    </div>
+                    <div class="company-sen-data-chart" id="companySenChart"></div>
+                </div>
+                <div class="banner re">
+                    <div class="slides_container">
+                        <div class="slide-js">
+                            <div id="dataValue"></div>
+                        </div>
+                        <div class="slide-js">
+                            <div id="senData"></div>
+                        </div>
+                        <div class="slide-js">
+                            <div id="dataInfluence"></div>
+                        </div>
+                    </div>
+                    <div class="box-tip">
+                        <div class="data-value re">
+                            <div class="rect">面对内部企业管理、直接影响业务的收益或面向公民、直接影响生命安全的数据。</div>
+                        </div>
+                        <div class="sen-data">
+                            <div class="rect">间接对外/面向内部企业管理、间接影响业务的收益或面向公民、可能造成经济损失的数据</div>
+                        </div>
+                        <div class="data-influence">
+                            <div class="rect">间接对外面向服务、对业务收益影响较小或面向公民，间接影响或影响较少个人利益的数据</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center flex-box flex-column">
+                <div class="main-map re">
+                    <div id="chainMap" class="china-map"></div>
+                    <!-- 拖拽 -->
+                    <div class="map-data-pool flex-box space-between">
+                        <div class="day-count flex-box flex-column justify-center align-center">
+                            <span title="816515313213">816515313213</span>
+                            <span>今日告警次数</span>
+                        </div>
+                        <div class="danger-type-count flex-box flex-column space-between">
+                            <div class="danger-type-item">
+                                <b class="td-danger-high">高</b>
+                                <span>高危告警</span>
+                                <span title="132123">132123</span>
+                            </div>
+                            <div class="danger-type-item">
+                                <b class="td-danger-midium">中</b>
+                                <span>中危告警</span>
+                                <span title="1321">1321</span>
+                            </div>
+                            <div class="danger-type-item">
+                                <b class="td-danger-low">低</b>
+                                <span>低危告警</span>
+                                <span title="1321">13222</span>
+                            </div>
+                        </div>
+                        <div class="class-counts flex-box flex-column space-between">
+                            <div class="class-count-item">
+                                <b></b>
+                                <span>监测系统数量</span>
+                                <span title="2112321123">2112321123</span>
+                            </div>
+                            <div class="class-count-item">
+                                <b></b>
+                                <span>历史累计告警量</span>
+                                <span title="233333">233333</span>
+                            </div>
+                            <div class="class-count-item">
+                                <b></b>
+                                <span>历史已处理数量</span>
+                                <span title="21123">21123</span>
+                            </div>
+                        </div>
+                        <div class="more"></div>
+                    </div>
+                </div>
+                <div class="reatime-warning">
+                    <div class="title"><i></i>实时告警记录</div>
+                    <div class="table flex-box flex-column">
+                        <div class="thead flex-box">
+                            <div class="th">告警时间</div>
+                            <div class="th">预警类型</div>
+                            <div class="th">预警级别</div>
+                            <div class="th">源IP归属地</div>
+                            <div class="th">源IP/账号</div>
+                            <div class="th">指纹名称</div>
+                        </div>
+                        <div class="table-swiper">
+                            <div class="tbody swiper-wrapper">
+                                <div class="tr flex-box swiper-slide">
+                                    <div class="td" title="sdfsfd">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf"><b class="td-danger-high">高</b>sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf"><b class="td-type-ip">IP</b>sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                </div>
+                                <div class="tr flex-box swiper-slide">
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsfdsdfsfdsdfsfdsdfsfdsdfsfd">
+                                        sdfsfdsdfsfdsdfsfdsdfsfdsdfsfd</div>
+                                    <div class="td" title="sdfsdf"><b class="td-danger-midium">中</b>sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf"><b class="td-type-account">账</b>sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                </div>
+                                <div class="tr flex-box swiper-slide">
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf"><b class="td-danger-low">低</b>sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                </div>
+                                <div class="tr flex-box swiper-slide">
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                </div>
+                                <div class="tr flex-box swiper-slide">
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                </div>
+                                <div class="tr flex-box swiper-slide">
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                    <div class="td" title="sdfsdf">sdfsfd</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right flex-box flex-column space-between">
+                <div class="sen-data-views flex-box flex-column">
+                    <div class="title tac">
+                        <i></i> 敏感数据访问量TOP5
+                        <i></i>
+                    </div>
+                    <div class="sen-data-views-chart" id="senDataViewsChart"></div>
+                </div>
+                <div class="company-sen-distributed flex-box flex-column">
+                    <div class="title tac">
+                        <i></i> 敏感数据访问分布情况
+                        <i></i>
+                    </div>
+                    <div class="company-sen-data-chart" id="senDataDistributedChart"></div>
+                </div>
+                <div class="sen-data-views-two flex-box flex-column">
+                    <div class="title tac">
+                        <i></i> 敏感数据访问区域(国内)TOP10
+                        <i></i>
+                    </div>
+                    <div class="sen-data-views-chart" id="senDataViewsTwoChart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/jquery/jquery-1.11.0.min.js"></script>
+    <script src="./libs/jquery/slides.min.jquery.js"></script>
+    <script src="./libs/echarts/echarts.min.js"></script>
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="./static/js/china.js"></script>
+    <script src="./libs/lodash/lodash.js"></script>
+    <script src="./static/js/home.js"></script>
+</body>
+
+</html>
